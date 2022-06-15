@@ -1,0 +1,251 @@
+@import url(//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely);
+@import url(//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: "Bely"; */
+/* font-family: "Gotham Medium";  */
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Headet Start Here */
+.header_top{
+    background-color: #FCF2D9;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Bely";
+}
+.navbar-brand {
+    width: 110px;
+}
+.active{
+    color: #2A4C65;
+}
+.left_navbar ul li a{
+    color: #2C4B67;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.left_navbar ul li:hover{
+    border-bottom: 1px solid #2A4C65;
+}
+.left_navbar ul li:hover a {
+    color: #2A4C65;
+    font-weight: bolder;
+    transition: all 0.5s ease;
+}
+.left_navbar ul li{
+    position: relative;
+
+}
+.left_navbar ul li::after {
+    background: #B6ADA8;
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    width: 2px;
+    height: 13px;
+}
+.right_navbar ul li {
+    padding: 0 3px;
+    display: inherit;
+    transition: all 0.5s ease;
+}
+.right_navbar ul li a{
+    color: #3097B6;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.right_navbar ul li svg, i{
+    color: #B3AEAA;
+    padding-top: 10px;
+}
+.right_navbar ul li:hover{
+    border-bottom: 1px solid #3097B6;
+}
+
+.right_navbar ul li:hover a{
+    color: #3097B6;
+    font-weight: bolder;
+}
+.right_navbar button{
+    display: flex;
+    border: none;
+    padding: 0 5px;
+    color: #ffffff;
+    background-color: #3097B8;
+}
+.right_navbar button i, svg{
+    padding-top: 12px;
+}
+.right_navbar button a{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Bely";
+}
+.right_navbar button:hover a{
+    color: #ffffff;
+}
+/* Headet End Here */
+
+/* Home Start Here */
+#home{
+    height: 100vh;
+    background-color: #F7F6F2;
+}
+#home .hero_text{
+    font-family: "Bely";
+}
+.home_top{
+    position: relative;
+}
+.home_bottom{
+    position: absolute;
+    top: 50%;
+}
+
+.home_bottom_top ul{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_bottom_top ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.home_bottom_top ul li::after {
+    background: rgb(182, 173, 168);
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -34px;
+    width: 1px;
+    height: 30px;
+}
+.home_bottom_top ul li:nth-child(n+4)::after {
+    background: transparent;
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+}
+.home_bottom_top ul li span:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.home_bottom_top ul li span:last-child {
+    color: #B6ADA8;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.home_bottom_top ul li svg{
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #000;
+}
+.big_card{
+    position: relative;
+    background-image: url("images/house.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    position: relative;
+}
+.card_top_text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+}
+.card_top_text svg {
+    color: #FFD800;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+.card_top_text p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.card_top_text p span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.card_bottom_text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgb(254 254 254 / 10%),rgb(255 255 255 /75%));
+}
+.card_bottom_text h2 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card_bottom_text p {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card_bottom_text p span {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card_bottom_text a {
+    color: #3397B9;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+.card-body h5 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card-body p {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card-body p span {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif; 
+}
+.card-body a {
+    color: #3397B9;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+.carousel-control-prev-icon {
+    background-color: #00000060;
+}
+.carousel-control-next-icon {
+    background-color: #00000060;
+}
+/* Home End Here */
