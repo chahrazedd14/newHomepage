@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome Cdn Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- Main Css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +30,9 @@
                 <img src="images/logo.png" alt="logo" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="left_navbar">
@@ -71,10 +75,6 @@
                           <i class="fa-solid fa-bell-concierge"></i>
                           <a class="nav-link" href="#">Réserver</a>
                         </button>
-                        <!-- <li class="nav-item">
-                          <i class="fa-solid fa-bell-concierge"></i>
-                          
-                        </li> -->
                     </ul>
                 </div>
               </div>
@@ -89,144 +89,207 @@
             <div class="row">
               <div class="col-md-6 d-flex justify-content-center pt-5 home_top_text">
                 <h1 class="text-center hero_text">Choisissez votre <br/> expérience club <br/>aux sommets.</h1>
-                <!-- <img src="images/m_shape.png" alt="image" class="img-fluid"> -->
               </div>
               <div class="col-md-6 hero_top_img">
                 <img src="images/team.jpg" alt="team_image" class="img-fluid">
               </div>
             </div>
-          </div>
-          <div class="home_bottom">
-            <div class="row">
-              <div class="col-md-10 offset-1">
-                <div class="row">
-                  <div class="col-md-8 offset-2">
-                    <div class="home_bottom_top rounded-pill bg-white p-2 mb-5">
-                      <ul>
-                        <li>
-                          <span>Destination</span>
-                          <span>Ou allez-vous ?</span>
-                        </li>
-                        <li>
-                          <span>Depart</span>
-                          <span>Quand ?</span>
-                        </li>
-                        <li>
-                          <span>Arrivée</span>
-                          <span>Quand ?</span>
-                        </li>
-                        <li>
-                          <span>Voyageurs</span>
-                          <span>Qui?</span>
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="home_bottom_main bg-white rounded-3 shadow-lg p-4">
+            <div class="home_bottom">
+              <div class="row">
+                <div class="col-md-10 offset-1">
                   <div class="row">
-                    <div class="col-md-6 rounded-3 big_card">
-                        <div class="card_top_text py-2 px-2 rounded-pill">
-                          <i class="fa-solid fa-star"></i>
-                          <p>4.8 <span>(112 avis)</span></p>
-                        </div>
-                      <div class="card_bottom_text">
-                        <h2>Belle Plagne, <br/> Hôtel Club Les <br/> 2  Domaines ****</h2>
-                        <p>Votre semaine à partir de <br/> 581€ / <span>pers. en pension complète</span></p>
-                        <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                    <div class="col-md-8 offset-2">
+                      <div class="home_bottom_top rounded-pill bg-white p-2 mb-5">
+                        <ul>
+                          <li>
+                            <span>Destination</span>
+                            <span>Ou allez-vous ?</span>
+                          </li>
+                          <li>
+                            <span>Depart</span>
+                            <span>Quand ?</span>
+                          </li>
+                          <li>
+                            <span>Arrivée</span>
+                            <span>Quand ?</span>
+                          </li>
+                          <li>
+                            <span>Voyageurs</span>
+                            <span>Qui?</span>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="card rounded-3" >
-                            <div class="card_top_img ">
-                              <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                  </div>
+                  <div class="home_bottom_main bg-white rounded-3 shadow-lg p-4">
+                    <div class="row">
+                      <div class="col-md-6 rounded-3 big_card">
+                          <div class="card_top_text py-2 px-2 rounded-pill">
+                            <i class="fa-solid fa-star"></i>
+                            <p>4.8 <span>(112 avis)</span></p>
+                          </div>
+                        <div class="card_bottom_text">
+                          <h2>Belle Plagne, <br/> Hôtel Club Les <br/> 2  Domaines ****</h2>
+                          <p>Votre semaine à partir de <br/> 581€ / <span>pers. en pension complète</span></p>
+                          <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <!-- Swiper Carousel Start -->
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="card_top_text py-2 px-2 rounded-pill">
-                              <i class="fa-solid fa-star"></i>
-                              <p>4.9 <span>(152 avis)</span></p>
+                            <div class="swiper-slide">
+                              <div class="card">
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
                             </div>
-                            <div class="card-body">
-                              <h5 class="card-title">La Plagne Aime 2000, Hôtel Club La Plagne 2000 ****</h5>
-                              <p class="card-text">Votre semaine à partir de <br/> 567€ / <span>pers. en pension complète</span></p>
-                              <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card" >
+                                <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                                </div>
+                                <div class="card_top_text py-2 px-2 rounded-pill">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.5 <span>(920 avis)</span></p>
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
+                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
+                                </div>
+                              </div>
                             </div>
                           </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="col-md-6">
-                        <!-- Slide Start -->
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <!-- <div class="col-md-6"> -->
-                                <div class="card" >
-                                  <div class="card_top_img">
-                                    <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                  </div>
-                                  <div class="card_top_text py-2 px-2 rounded-pill">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.5 <span>(920 avis)</span></p>
-                                  </div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                    <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                    <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                  </div>
-                                </div>
-                              <!-- </div> -->
-                            </div>
-                            <div class="carousel-item">
-                              <!-- <div class="col-md-6"> -->
-                                <div class="card" >
-                                  <div class="card_top_img">
-                                    <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                  </div>
-                                  <div class="card_top_text py-2 px-2 rounded-pill">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.5 <span>(920 avis)</span></p>
-                                  </div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                    <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                    <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                  </div>
-                                </div>
-                              <!-- </div> -->
-                            </div>
-                            <div class="carousel-item">
-                              <!-- <div class="col-md-6"> -->
-                                <div class="card" >
-                                  <div class="card_top_img">
-                                    <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                  </div>
-                                  <div class="card_top_text py-2 px-2 rounded-pill">
-                                    <i class="fa-solid fa-star"></i>
-                                    <p>4.5 <span>(920 avis)</span></p>
-                                  </div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                    <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                    <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                  </div>
-                                </div>
-                              <!-- </div> -->
-                            </div>
-                          </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button>
-                        </div>
-                        <!-- Slide End -->
-                        </div>
+                        <!-- Swiper Carousel End -->
                       </div>
                     </div>
                   </div>
@@ -237,10 +300,13 @@
         </div>
       </section>
     </main>
-
     <!-- Bootstrap Js 5.0.2 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Font Awesome Cdn Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="index.js"></script>
 </body>
 </html>
