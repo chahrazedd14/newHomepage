@@ -1,296 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Gotham Medium Font -->
-    <link href="//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium" rel="stylesheet" type="text/css"/>
-    <!-- Bely Display Font -->
-    <link href="//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely" rel="stylesheet" type="text/css"/>
-    <!-- Bootstrap Css 5.0.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Font Awesome Cdn Css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!-- Main Css -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Gotham Medium Font -->
+  <link href="//db.onlinewebfonts.com/c/9a2bc11be56851dde98c1b49302cc21a?family=Gotham+Medium" rel="stylesheet"
+    type="text/css" />
+  <!-- Bely Display Font -->
+  <link href="//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely" rel="stylesheet"
+    type="text/css" />
+  <!-- Bootstrap Css 5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Font Awesome Cdn Css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Main Css -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header_top py-2">
-            <h5 class="text-center fs-6">Vacances de Pâques - Jusqu'à 20% <i class="fa-solid fa-arrow-right-long ms-2"></i> </h5>
-        </div>
-        <!-- Navbar Start Here -->
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand ms-3" href="#">
-                <img src="images/logo.png" alt="logo" class="img-fluid">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                  <i class="fa-solid fa-bars"></i>
-                </span>
+  <header>
+    <div class="header_top py-2">
+      <h5 class="text-center fs-6">Vacances de Pâques - Jusqu'à 20% <i class="fa-solid fa-arrow-right-long ms-2"></i>
+      </h5>
+    </div>
+    <!-- Navbar Start Here -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="#">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="left_navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Résidences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hôtels Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chalets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">L'Expérience MMV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Idées Sejours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dernières minutes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right_navbar ms-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <i class="fa-solid fa-gift"></i>
+                <a class="nav-link" href="#">Promos</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <a class="nav-link" href="#">Mon Compte</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="nav-link" href="#">Panier</a>
+              </li>
+              <button>
+                <i class="fa-solid fa-bell-concierge"></i>
+                <a class="nav-link" href="#">Réserver</a>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="left_navbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Résidences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hôtels Club</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chalets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">L'Expérience MMV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Idées Sejours</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dernières minutes</a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="right_navbar ms-4">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <i class="fa-solid fa-gift"></i>
-                          <a class="nav-link" href="#">Promos</a>
-                        </li>
-                        <li class="nav-item">
-                          <i class="fa-solid fa-user"></i>
-                          <a class="nav-link" href="#">Mon Compte</a>
-                        </li>
-                        <li class="nav-item">
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <a class="nav-link" href="#">Panier</a>
-                        </li>
-                        <button>
-                          <i class="fa-solid fa-bell-concierge"></i>
-                          <a class="nav-link" href="#">Réserver</a>
-                        </button>
-                    </ul>
-                </div>
-              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End Here -->
+  </header>
+  <main>
+    <section id="home">
+      <div class="container-fluid">
+        <div class="home_top position-relative">
+          <div class="row position-relative">
+            <div class="col-md-6 d-flex justify-content-center pt-5 home_top_text">
+              <h1 class="text-center hero_text">Choisissez votre <br> expérience club <br>aux sommets.</h1>
+              <img src="images/m---chr.png" alt="m shape" class="home_top_m-shape">
             </div>
-          </nav>
-        <!-- Navbar End Here -->
-    </header>
-    <main>
-      <section id="home">
-        <div class="container-fluid">
-          <div class="home_top">
+            <div class="col-md-6 hero_top_img">
+              <img src="images/team.jpg" alt="team_image" class="img-fluid">
+            </div>
+          </div>
+          <div class="home_bottom">
             <div class="row">
-              <div class="col-md-6 d-flex justify-content-center pt-5 home_top_text">
-                <h1 class="text-center hero_text">Choisissez votre <br/> expérience club <br/>aux sommets.</h1>
-              </div>
-              <div class="col-md-6 hero_top_img">
-                <img src="images/team.jpg" alt="team_image" class="img-fluid">
-              </div>
-            </div>
-            <div class="home_bottom">
-              <div class="row">
-                <div class="col-md-10 offset-1">
-                  <div class="row">
-                    <div class="col-md-8 offset-2">
-                      <div class="home_bottom_top rounded-pill bg-white p-2 mb-5">
-                        <ul>
-                          <li>
-                            <span>Destination</span>
-                            <span>Ou allez-vous ?</span>
-                          </li>
-                          <li>
-                            <span>Depart</span>
-                            <span>Quand ?</span>
-                          </li>
-                          <li>
-                            <span>Arrivée</span>
-                            <span>Quand ?</span>
-                          </li>
-                          <li>
-                            <span>Voyageurs</span>
-                            <span>Qui?</span>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                          </li>
-                        </ul>
-                      </div>
+              <div class="col-md-10 offset-1">
+                <div class="row">
+                  <div class="col-md-8 offset-2">
+                    <div class="home_bottom_top rounded-pill bg-white p-2 mb-5">
+                      <ul>
+                        <li>
+                          <span>Destination</span>
+                          <span>Ou allez-vous ?</span>
+                        </li>
+                        <li>
+                          <span>Depart</span>
+                          <span>Quand ?</span>
+                        </li>
+                        <li>
+                          <span>Arrivée</span>
+                          <span>Quand&nbsp;?</span>
+                        </li>
+                        <li>
+                          <span>Voyageurs</span>
+                          <span>Qui?</span>
+                        </li>
+                        <li>
+                          <svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                              d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z">
+                            </path>
+                          </svg><!-- <i class="fa-solid fa-magnifying-glass"></i> Font Awesome fontawesome.com -->
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="home_bottom_main bg-white rounded-3 shadow-lg p-4">
-                    <div class="row">
-                      <div class="col-md-6 rounded-3 big_card">
-                          <div class="card_top_text py-2 px-2 rounded-pill">
-                            <i class="fa-solid fa-star"></i>
-                            <p>4.8 <span>(112 avis)</span></p>
-                          </div>
-                        <div class="card_bottom_text">
-                          <h2>Belle Plagne, <br/> Hôtel Club Les <br/> 2  Domaines ****</h2>
-                          <p>Votre semaine à partir de <br/> 581€ / <span>pers. en pension complète</span></p>
-                          <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                        </div>
+                </div>
+                <div class="home_bottom_main bg-white rounded-3 shadow-lg p-4">
+                  <div class="row">
+                    <div class="col-md-6 rounded-3 big_card">
+                      <div class="card_top_text py-2 px-2 rounded-pill">
+                        <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas"
+                          data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                          data-fa-i2svg="">
+                          <path fill="currentColor"
+                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                          </path>
+                        </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                        <p>4.8 <span>(112 avis)</span></p>
                       </div>
-                      <div class="col-md-6">
-                        <!-- Swiper Carousel Start -->
-                        <div class="swiper mySwiper">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
+                      <div class="card_bottom_text">
+                        <h2>Belle Plagne, <br> Hôtel Club Les <br> 2 Domaines ****</h2>
+                        <p>Votre semaine à partir de <br> 581€ / <span>pers. en pension complète</span></p>
+                        <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2" aria-hidden="true"
+                            focusable="false" data-prefix="fas" data-icon="arrow-right-long" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                              d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                            </path>
+                          </svg><!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <!-- Swiper Carousel Start -->
+                      <div
+                        class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-108c03986a6065e41" aria-live="polite"
+                          style="cursor: grab; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
                                 <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
                               </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card">
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
                                 <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
                               </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
+                              <div class="card-body">
                                 <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="card" >
-                                <div class="card_top_img">
-                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
-                                </div>
-                                <div class="card_top_text py-2 px-2 rounded-pill">
-                                <i class="fa-solid fa-star"></i>
-                                <p>4.5 <span>(920 avis)</span></p>
-                                </div>
-                                <div class="card-body">
-                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
-                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br/> 1050€ / <span> appartement en location</span></p>
-                                <a href="#">Je découvre <i class="fa-solid fa-arrow-right-long ms-2"></i> </a>
-                                </div>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
                               </div>
                             </div>
                           </div>
-                          <div class="swiper-button-next"></div>
-                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="3 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="4 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="5 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="6 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="7 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="8 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide" role="group" aria-label="9 / 9"
+                            style="width: 215px; margin-right: 20px;">
+                            <div class="card">
+                              <div class="card_top_img">
+                                <img src="images/house.jpg" class="card-img-top" alt="images_house">
+                              </div>
+                              <div class="card_top_text py-2 px-2 rounded-pill">
+                                <svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false"
+                                  data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 576 512" data-fa-i2svg="">
+                                  <path fill="currentColor"
+                                    d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z">
+                                  </path>
+                                </svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com -->
+                                <p>4.5 <span>(920 avis)</span></p>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Les 2 Alpes, Résidence Club Les Clarines ****</h5>
+                                <p class="card-text mt-4 pt-3">Votre semaine à partir de <br> 1050€ / <span> appartement
+                                    en location</span></p>
+                                <a href="#">Je découvre <svg class="svg-inline--fa fa-arrow-right-long ms-2"
+                                    aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right-long"
+                                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                      d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z">
+                                    </path>
+                                  </svg>
+                                  <!-- <i class="fa-solid fa-arrow-right-long ms-2"></i> Font Awesome fontawesome.com -->
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <!-- Swiper Carousel End -->
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                          aria-controls="swiper-wrapper-108c03986a6065e41" aria-disabled="false"></div>
+                        <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+                          aria-label="Previous slide" aria-controls="swiper-wrapper-108c03986a6065e41"
+                          aria-disabled="true"></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                       </div>
+                      <!-- Swiper Carousel End -->
                     </div>
                   </div>
                 </div>
@@ -298,15 +483,19 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- Bootstrap Js 5.0.2 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Font Awesome Cdn Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Main Js -->
-    <script src="index.js"></script>
+      </div>
+    </section>
+  </main>
+  <!-- Bootstrap Js 5.0.2 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome Cdn Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Main Js -->
+  <script src="index.js"></script>
 </body>
+
 </html>
